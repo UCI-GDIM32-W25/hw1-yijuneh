@@ -13,11 +13,11 @@ public class Player : MonoBehaviour
 
     private void Start ()
     {
-        _playerTransform = GetComponent<Transform>();
+        _playerTransform = transform;
         
         _numSeedsLeft = _numSeeds;
         _numSeedsPlanted = 0;
-        _plantCountUI.UpdateSeeds(_numSeedsPlanted, _numSeedsLeft);
+        _plantCountUI.UpdateSeeds(_numSeedsLeft, _numSeedsPlanted);
     }
 
     private void Update()
@@ -43,7 +43,7 @@ public class Player : MonoBehaviour
             Instantiate(_plantPrefab, _playerTransform.position, Quaternion.identity);
             _numSeedsLeft--;
             _numSeedsPlanted++;
-            _plantCountUI.UpdateSeeds(_numSeedsPlanted, _numSeedsLeft);
+            _plantCountUI.UpdateSeeds(_numSeedsLeft, _numSeedsPlanted);
         }
     }
 }

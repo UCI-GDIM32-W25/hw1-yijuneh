@@ -43,3 +43,6 @@ The detailed setup and interaction between Player and PlantCountUI classes withi
 ## Open-Source Assets
 If you added any other outside assets, list them here!
 - [Sprout Lands sprite asset pack](https://cupnooble.itch.io/sprout-lands-asset-pack) - character and item sprites
+
+## Prof comments
+Thank you for answering the prompt and formatting everything well!
